@@ -1,5 +1,7 @@
 // Hook:
 import { useRef } from "react";
+// Styles:
+import styles from "./NewTodo.module.css";
 
 const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
   const todoInputRef = useRef<HTMLInputElement>(null);
@@ -16,7 +18,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
   };
 
   return (
-    <form onSubmit={formSubmissionHandler}>
+    <form className={styles.form} onSubmit={formSubmissionHandler}>
       <label htmlFor="text">Task</label>
       <input type="text" id="text" ref={todoInputRef} />
       <button>Add task</button>

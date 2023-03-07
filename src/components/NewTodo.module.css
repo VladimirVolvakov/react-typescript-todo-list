@@ -1,0 +1,44 @@
+.form {
+  width: 40rem;
+  margin: 2rem auto;
+  
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #9DC08B;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.form button {
+  font: inherit;
+  background-color: #9DC08B;
+  border: 1px solid #9DC08B;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #609966;
+  border-color: #609966;
+}
